@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Alan Coelho</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0 30px;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #aa924f;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .imagem_alan {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #aa924f;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 96%;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #aa924f;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #aa924f 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #aa924f;
+            color: white;
+        }
+
+        /* Media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper,
+            .imagem_alan,
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Trabalhos</h1>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="trabalhos.html">Trabalhos</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_alan">
+            <img src="Alan.png">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Estudante</p>
+                <p><strong>Data de Nascimento:</strong> 19/12/2001</p>
+                <p><strong>Email:</strong> alancoelhog8@gmail.com</p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>Alan Coelho Gomes</h1>
+            <p> Atualmente, não estou comprometido com nenhum trabalho oficial, mas dediquei meu tempo ao desenvolvimento de alguns projetos simples. Você pode encontrá-los em meu perfil no GitHub ou entrar em contato via e-mail para mais detalhes.
+
+                Esses projetos abrangem diversas áreas, incluindo Python, HTML e uma linguagem que tenho pesquisado, o MQL5, embora ainda não domine completamente.
+                
+                No ambiente profissional, tenho utilizado extensivamente Python e suas bibliotecas para automatizar tarefas e simplificar processos na empresa onde trabalho. Isso inclui a criação de conversores e manipuladores de PDF, assim como conversores de vídeo para MP3, entre outras ferramentas que estão disponíveis em meu perfil no GitHub.
+            </p>
+        </section>
+    </div>
+    <footer class="container">
+        <p>Desenvolvido por Alan Coelho Gomes &copy; 2024</p>
+    </footer>
+    <div style="text-align: center;">
+        <a href="https://www.linkedin.com/in/alan-gomes-1147b5185/">Linkedin</a>
+        <a href="https://github.com/">GitHub</a>
+        <a href="mailto:alancoelhog8@gmail.com">E-mail</a>
+    </div>
+</body>
+
+</html>

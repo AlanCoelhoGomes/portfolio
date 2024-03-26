@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Alan Coelho</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0 30px;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #aa924f;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .imagem_alan {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #aa924f;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 96%;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #aa924f;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #aa924f 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #aa924f;
+            color: white;
+        }
+
+        /* Media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper,
+            .imagem_alan,
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Portfólio</h1>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="trabalhos.html">Trabalhos</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_alan">
+            <img src="Alan.png">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Estudante</p>
+                <p><strong>Data de Nascimento:</strong> 19/12/2001</p>
+                <p><strong>Email:</strong> alancoelhog8@gmail.com</p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>Alan Coelho Gomes</h1>
+            <p> Olá! Meu nome é Alan, tenho 22 anos e nasci em dezembro. Muitos dizem que, como sagitariano, sou uma pessoa muito desapegada, e sinto que demonstrei isso ao longo de toda a minha vida.
+
+                Desde jovem, pratiquei vários esportes, mas os que mais me atraem são aqueles que dão “frio na barriga”. Muitos desses esportes eu pratiquei quando estava servindo na força militar brasileira, onde fiz muitos amigos e me dediquei a algumas atividades que me ajudaram a escolher quem sou hoje.
+                
+                Após meu tempo na força militar, decidi me aventurar na Europa. Morei por dois anos na Irlanda, em uma pequena cidade do interior. Durante esse tempo, viajei por 8 países e trabalhei em diversos lugares. Foi então que percebi que o que realmente queria para a minha vida estava bem na minha frente todos os dias: a tecnologia.
+                
+                O computador tem sido meu companheiro de vida desde muito jovem. Dediquei muitas horas brincando e aprendendo coisas novas. Meu pai, que era um programador na linguagem Cobol, me ensinou muito e hoje me incentiva a continuar seguindo esses passos.
+                
+                Prazer, Alan!
+            </p>
+        </section>
+    </div>
+    <footer class="container">
+        <p>Desenvolvido por Alan Coelho Gomes &copy; 2024</p>
+    </footer>
+</body>
+
+</html>
